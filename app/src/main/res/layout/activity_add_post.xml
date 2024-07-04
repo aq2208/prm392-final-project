@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddPostActivity">
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context=".Post.AddPostActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,25 +14,12 @@
         android:layout_margin="2dp"
         android:orientation="vertical">
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="?android:attr/progressBarStyleLarge" />
-
-        <TextView
-            android:id="@+id/progressMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Publishing post..."
-            android:textSize="18sp" />
 
         <!--PostTitle-->
         <EditText
             android:id="@+id/pTitleEt"
             android:background="@drawable/editextstyle"
-            android:padding="10dp"
+            android:padding="12dp"
             android:hint="Enter title"
             android:singleLine="true"
             android:layout_width="match_parent"

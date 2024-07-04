@@ -1,10 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace 'com.example.socialmediaapp'
     compileSdk 34
+    packagingOptions{
+        exclude("META-INF/DEPENDENCIES")
+    }
 
     defaultConfig {
         applicationId "com.example.socialmediaapp"
@@ -40,6 +44,16 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
     implementation(libs.firebase.storage)
+    implementation(libs.firebase.core)
+    implementation('com.squareup.picasso:picasso:2.8')
+    implementation('androidx.recyclerview:recyclerview:1.3.2')
+    implementation('com.google.android.gms:play-services-auth:21.2.0')
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    implementation 'com.github.AtifSayings:CircularImageView:1.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.19.0'
+    implementation libs.firebase.messaging
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
