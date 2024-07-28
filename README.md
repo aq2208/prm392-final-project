@@ -1,4 +1,5 @@
-# prm392-final-project
+# prm392-holasync
+# A Social Media Mobile App, built on Android, using Java
 
 
 
