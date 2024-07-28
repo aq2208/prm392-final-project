@@ -1,4 +1,5 @@
-# prm392-final-project
+# prm392-holasyc
+# A Social Media Mobile App, on Android, using Java
 
 
 
